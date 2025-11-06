@@ -113,7 +113,7 @@ class Board:
         for row in range(self.size):
             for col in range(self.size):
                 cell = self.rows[row][col]
-                print(f"({row}, {col}): {cell}")
+                # print(f"({row}, {col}): {cell}")
                 if isinstance(cell, list):
                     if len(cell) < mini_length:
                         mini_length = len(cell)
@@ -129,7 +129,12 @@ class Board:
         Returns:
             True if we have failed to fill out the puzzle, False otherwise
         """
-        pass
+        for row in self.rows:
+            for col in row:
+                print(col)
+                if col == []:
+                    return True
+        return False
 
     def goal_test(self) -> bool:
         """Check if we've completed the puzzle (if we've placed all the numbers).
@@ -138,7 +143,8 @@ class Board:
         Returns:
             True if we've placed all numbers, False otherwise
         """
-        pass
+        return self.num_nums_placed == self.size * self.size
+    
 
     def update(self, row: int, column: int, assignment: int) -> None:
         """Assigns the given value to the cell given by passed in row and column
@@ -298,8 +304,8 @@ if __name__ == "__main__":
 
     b.rows[4][3] = []
     assert b.find_most_constrained_cell() == (4,3), "find most constrained cell test 2"
-    # assert b.failure_test() == True, "failure test test 2"
-    # print("All part 1 tests passed!")
+    assert b.failure_test() == True, "failure test test 2"
+    print("All part 1 tests passed!")
 
     # ##Now, let's write some quick tests to check update!
     # #Create a sudoku board.
