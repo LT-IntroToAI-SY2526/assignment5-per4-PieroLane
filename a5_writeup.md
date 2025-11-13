@@ -22,11 +22,11 @@ After completing the assignment, answer the following reflection questions:
 ## Reflection Questions
 
 1. What are some things that you learned through this assignment? Think about the concepts of backtracking, constraint satisfaction, and search algorithms. Were there any particular challenges you faced while implementing the Board class methods or the DFS/BFS functions? How did you overcome them?
-
+I had trouble figuring out what type of code to use for DFS. Once I saw how to do it and understood it, the BFS was very easy to understand because it was almost the same code except we were using queues. I LEARNED HOW TO USE STACKS AND QUEUES IN MY CODE TO FIND A SOLUTION.
 
 
 2. How can you apply what you learned in this assignment to future programs or projects? Consider other types of problems that involve searching through possibilities, making decisions, and backtracking when those decisions don't work out. Can you think of real-world scenarios where DFS or BFS might be useful? What about other constraint satisfaction problems?
+YOU CAN USE DFS AND BFS TO SEARCH FOR A SOLUTION. CHESS IS A GOOD EXAMPLE OR THE 8 BOX GAME THAT WAS SHOWED DURING CLASS. DFS MIGHT NOT BE AS USEFUL BECAUSE IT WILL TAKE LONGER IF THERE ARE MANY POSSIBILITIES. BFS IS GREAT IF YOU HAVE MANY POSSIBLE SOLUTIONS. DFS CAN GET YOU THE ANSWER FASTER BUT IT DEPENDS ON THE POSSIBILITIES BUT BFS WILL ALWAYS GET THE ANSWER BUT IT MIGHT TAKE MORE TIME.
 
 
-
-3. Explain how the Stack and Queue classes work and why they are important for DFS and BFS algorithms. Describe the difference between LIFO (Last In First Out) and FIFO (First In First Out) data structures. How does using a Stack versus a Queue change the way the search algorithm explores possible solutions? Why is one data structure better suited for depth-first search and the other for breadth-first search?
+3. Explain how the Stack and Queue classes work and why they are important for DFS and BFS algorithms. Describe the difference between LIFO (Last In First Out) and FIFO (First In First Out) data structures. How does using a Stack versus a Queue change the way the search algorithm explores possible solutions? Why is one data structure better suited for depth-first search and the other for breadth-first search? STACKS HAVE THE PATTER OF FIRST IN LAST OUT OR VICE VERSA. THIS MEANS THAT IF SOMETHING IS IN THE STACK FIRST, IT WILL BE PULLED OUT LAST AND IS AT THE BOTTOM. DFS USES STACKS TO GO DEEP INTO ONE POSSIBILITY. QUEUES USE FIFO WHERE IF YOU PUT IT IN FIRST, IT GOES OUT FIRST AND IS ON TOP. BFS USES QUEUES AND FIFO TO CHECK ALL POSSIBILITIES AT ONCE.
